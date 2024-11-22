@@ -1,0 +1,168 @@
+header {
+    background-color: #0B2265;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 20px solid red;
+  }
+  
+  header h1 {
+    margin: 0;
+    flex-grow: 2;
+    text-align: center;
+  }
+  
+  header .image-logo {
+    width: 10%;
+    height: auto;
+  }
+  
+  /* Navigation Styling */
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  nav a:hover {
+    background-color: red;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0B2265;
+  }
+  
+  main h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Image Styling */
+  .image-XXI, .image-XXV, .image-XLII, .image-XLVI, .image-Huff, .image-Strahan, .image-Tarkenton, .image-NYG {
+    border: 4px solid red;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .image-XXI, .image-XXV, .image-XLII, .image-XLVI {
+    max-width: 40%;
+  }
+  
+  .image-Huff, .image-Strahan, .image-Tarkenton {
+    max-width: 45%;
+    margin-right: 20px;
+  }
+  
+  p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+  
+  /* Flexbox for Player Cards */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .player {
+    background-color: #1a3353;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .player img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .player h2 {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .player p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0B2265;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header h1 {
+      margin-top: 10px;
+    }
+  
+    .image-XXI, .image-XXV, .image-XLII, .image-XLVI {
+      max-width: 100%;
+    }
+  
+    .player {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    header {
+      text-align: center;
+    }
+  
+    .player {
+      width: 100%;
+    }
+  
+    .image-logo {
+      width: 15%;
+    }
+  
+    p {
+      font-size: 0.85rem;
+    }
+  }
